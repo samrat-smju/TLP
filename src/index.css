@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #0A0B0D;
+  --color-panel-bg: #16181D;
+  --color-header-bg: #1C1F26;
+  --color-sidebar-bg: #121418;
+  --color-grad-start: #16181D;
+  --color-grad-end: #0F1115;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* Custom polished scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #121418;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d3748;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4a5568;
+}
+
+/* Slide animations for notification alerts */
+@keyframes slide-in {
+  from {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Subtle glow effects */
+.glow-border-blue {
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.15);
+}
+
+.glow-border-amber {
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.15);
+}
+
+.glow-shadow-lg {
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8);
+}

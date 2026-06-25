@@ -1,0 +1,6 @@
+{
+  "name": "TLP",
+  "description": "AI-Powered Trading Assistant providing institutional-quality Forex & OTC market analysis, Smart Money Concept (SMC) detection, and automated trade bias predictions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
